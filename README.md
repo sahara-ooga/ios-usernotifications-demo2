@@ -86,3 +86,4 @@ iOS10.0以上
 [UserNotifications Framework Reference](https://developer.apple.com/documentation/usernotifications)
 [Apple Push Notificationサービス](https://developer.apple.com/jp/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html)
 [iOS 10 時代の Notification(Qiita)](https://qiita.com/koogawa/items/0dff2f59096b292571db)
+[[iPhone] APNs プッシュ通知、デバイストークンの取得](https://i-app-tec.com/ios/apns-device-token.html#1)
