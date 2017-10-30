@@ -41,6 +41,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication,
+                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        //デバイストークンを取得
+        let deviceToken = String(format: "%@", deviceToken as CVarArg) as String
+        print("deviceToken = \(deviceToken)")
+    }
+    
+    /// Remote Notification登録のエラーを受け取る
+    /// UIApplication.shared.registerForRemoteNotifications()
+    /// を呼んだ後に呼ばれる
+    ///
+    /// - Parameters:
+    ///   - application:
+    ///   - error:
+    func application(_ application: UIApplication,
+                     didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print(error)
+    }
 }
 
